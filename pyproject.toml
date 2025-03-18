@@ -1,0 +1,15 @@
+[project]
+name = "cookie_clicker_automation"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Tommi Oinonen", email = "tommi.oinonen@gmail.com"},
+]
+dependencies = ["playwright>=1.50.0"]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
