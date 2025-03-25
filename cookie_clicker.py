@@ -2,21 +2,21 @@
 
 from engine import CookieClicker, Product
 
-engine = CookieClicker(headless=True)
+engine = CookieClicker(headless=False)
 
 
-#while True:
-for _ in range(200):
+while True:
     engine.click_big_cookie()
     cookies, per_second = engine.get_cookie_counts()
-    #prices = engine.get_product_info()
-    # if cookies >= prices[Product.Cursor]:
-    #     engine.buy_product(Product.Cursor)
+    prices = engine.get_product_info()
 
-engine.check_product_info()
-engine.buy_product(Product.Cursor)
-engine.click_big_cookie()
-#engine.check_upgrades()
+    if cookies >= prices[Product.Mine]:
+        engine.buy_product(Product.Mine)
+    elif cookies >= prices[Product.Farm]:
+        engine.buy_product(Product.Farm)
+    elif cookies >= prices[Product.Grandma]:
+        engine.buy_product(Product.Grandma)
+    elif cookies >= prices[Product.Cursor]:
+        engine.buy_product(Product.Cursor)
 
-engine.check_product_info()
 

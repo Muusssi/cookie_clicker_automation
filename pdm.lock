@@ -4,11 +4,8 @@
 [metadata]
 groups = ["default"]
 strategy = ["inherit_metadata"]
-lock_version = "4.5.0"
-content_hash = "sha256:1376e42a294e0dc16c6f19e15e4fc9e5689191b9a3a9fa54e16ef30d4f19a6d2"
-
-[[metadata.targets]]
-requires_python = ">=3.9"
+lock_version = "4.4.1"
+content_hash = "sha256:409655e5562b961fabb273b63c146a9b73cf4fdeac4afa19810356aee2bca62f"
 
 [[package]]
 name = "greenlet"
