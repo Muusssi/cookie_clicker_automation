@@ -49,7 +49,6 @@ def main():
             engine.buy_upgrade(next_upgrade)
             next_product = None
             next_upgrade = None
-            active_cps = engine.measure_active_clicking()
 
         if not next_product:
             product_info = engine.get_product_info()
@@ -59,7 +58,6 @@ def main():
             engine.buy_product(next_product)
             next_product = None
             next_upgrade = None
-            active_cps = engine.measure_active_clicking()
 
 
 
